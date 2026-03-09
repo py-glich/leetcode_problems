@@ -1,4 +1,4 @@
-###📌 Two Sum Implementation Errors (Python)
+#📌 Two Sum Implementation Errors (Python)
 ❌ Common Errors in This Code
 1. Constructor Usage Error
 
