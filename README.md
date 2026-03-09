@@ -145,3 +145,72 @@ O(max(n, m))
 Space Complexity:
 
 O(max(n, m))
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+📌 Substring vs Subsequence – Quick Study Notes
+1. Definitions
+
+Substring
+
+A substring is a continuous block of characters taken from a string.
+
+You cannot skip any characters.
+
+Order is always preserved.
+
+Subsequence
+
+A subsequence is a set of characters taken from a string in the same order, but you can skip some characters.
+
+Order must be preserved, but continuity is not required.
+
+2. Key Differences
+Feature	Substring	Subsequence
+Continuity	✅ Must be continuous	❌ Can skip characters
+Order	✅ Must preserve original order	✅ Must preserve original order
+Skipping letters	❌ Not allowed	✅ Allowed
+Example from "PWWKEW"	"WKE"	"PKE", "PWKE"
+3. How to Identify
+
+Substring → pick a block of letters without gaps.
+
+Subsequence → pick letters in order, skip letters if needed.
+
+Remember:
+
+Substring → letters are together
+
+Subsequence → letters can be apart
+
+4. Why They Matter
+
+Substring problems: sliding window techniques, longest substring without repeating characters.
+
+Subsequence problems: dynamic programming, longest common subsequence, pattern matching, DNA analysis, file comparison.
+
+Benefit of subsequences: detect patterns even if extra or irrelevant letters appear.
+
+Benefit of substrings: detect continuous patterns without interruption.
+
+5. Quick Visual Example
+
+String: "PWWKEW"
+
+Substring examples (continuous, no repeat):
+
+PW, WKE, KEW
+
+Subsequence examples (order preserved, can skip):
+
+PKE, PWKE, WKE
+
+Rule to remember:
+
+Substring → no skips, continuous
+Subsequence → can skip, order preserved
+
+✅ Memory Tip:
+
+Think Substring = solid block, Subsequence = arrows skipping letters.
+
+When solving problems, check whether continuity is required (substring) or skipping is allowed (subsequence).
