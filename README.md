@@ -1,4 +1,4 @@
-📌 Two Sum Implementation Errors (Python)
+#📌 Two Sum Implementation Errors (Python)
 ❌ Common Errors in This Code
 1. Constructor Usage Error
 
@@ -52,7 +52,7 @@ __init__()
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-📌 Common Errors in Add Two Numbers Code
+#📌 Common Errors in Add Two Numbers Code
 ✅ 1. Using total Before Assignment (Very Common Bug)
 
 ❌ Wrong order:
@@ -147,7 +147,7 @@ Space Complexity:
 O(max(n, m))
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-📌 Substring vs Subsequence – Quick Study Notes
+#📌 Substring vs Subsequence – Quick Study Notes
 1. Definitions
 
 Substring
@@ -214,3 +214,23 @@ Subsequence → can skip, order preserved
 Think Substring = solid block, Subsequence = arrows skipping letters.
 
 When solving problems, check whether continuity is required (substring) or skipping is allowed (subsequence).
+
+#Wrong Duplicate Check 
+
+Issue in Code:
+
+if char in seen and seen[char] <= left:
+    left = seen[char] + 1
+
+❌ Using <= left is incorrect
+
+Correct Version:
+
+if char in seen and seen[char] >= left:
+    left = seen[char] + 1
+
+Explanation:
+
+Move left only when the duplicate character is inside the current window.
+
+This ensures the sliding window always contains unique characters.
